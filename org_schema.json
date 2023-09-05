@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "users": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": {
+                    "type": "object",
+                    "properties": {
+                        "github": {
+                            "type": "string"
+                        },
+                        "ssh-key": {
+                            "type": "string",
+                            "pattern": "^ssh-rsa .*"
+                        },
+                        "password": {
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            }
+        }
+    },
+    "required": ["name", "users"]
+}
