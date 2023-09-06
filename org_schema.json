@@ -16,8 +16,7 @@
                             "type": "string"
                         },
                         "ssh-key": {
-                            "type": "string",
-                            "pattern": "^ssh-rsa .*"
+                        "type": "string"
                         },
                         "password": {
                             "type": "string"
