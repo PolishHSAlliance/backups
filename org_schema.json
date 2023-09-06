@@ -16,7 +16,7 @@
                             "type": "string"
                         },
                         "ssh-key": {
-                        "type": "string"
+                            "type": "string"
                         },
                         "password": {
                             "type": "string"
@@ -27,5 +27,8 @@
             }
         }
     },
-    "required": ["name", "users"]
+    "required": [
+        "name",
+        "users"
+    ]
 }
